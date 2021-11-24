@@ -15,19 +15,22 @@ export default function Header() {
                 <TouchableOpacity>
                     <Image
                         style={styles.icon}
-                        source={{ uri: "https://img.icons8.com/external-becris-lineal-becris/64/ffffff/external-add-mintab-for-ios-becris-lineal-becris.png" }}
+                        source={{ uri: "https://img.icons8.com/ios/50/ffffff/add.png" }}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Image
                         style={styles.icon}
-                        source={{ uri: "https://img.icons8.com/external-becris-lineal-becris/64/ffffff/external-add-mintab-for-ios-becris-lineal-becris.png" }}
+                        source={{ uri: "https://img.icons8.com/ios/50/ffffff/like.png" }}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity>
+                    <View style={styles.unreadBadge}>
+                        <Text style={styles.unreadBadgeText}>11</Text>
+                    </View>
                     <Image
                         style={styles.icon}
-                        source={{ uri: "https://img.icons8.com/external-becris-lineal-becris/64/ffffff/external-add-mintab-for-ios-becris-lineal-becris.png" }}
+                        source={{ uri: "https://img.icons8.com/ios/50/ffffff/facebook-messenger--v1.png" }}
                     />
                 </TouchableOpacity>
             </View>
@@ -55,5 +58,21 @@ const styles = StyleSheet.create({
         width: 100,
         height: 50,
         resizeMode: "contain"
+    },
+    unreadBadge: {
+        backgroundColor: "#FF3250",
+        position: "absolute",
+        left: 20,
+        bottom: 18,
+        width:25,
+        height:18,
+        borderRadius: 25,
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 100
+    },
+    unreadBadgeText: {
+        color: "white",
+        fontWeight: "600"
     }
 });
