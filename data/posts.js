@@ -12,10 +12,6 @@ export const POSTS = [
                 user: "MR. Dam",
                 comment: "Đẹp đấy..."
             },
-            {
-                user: "MR. Hung",
-                comment: "Nhìn cũng được ..."
-            },
         ]
     },
     {
@@ -36,7 +32,7 @@ export const POSTS = [
         ]
     },
     {
-        imageUrl: "https://image.thanhnien.vn/1200x630/Uploaded/2021/bzivoxbp/2020_05_19/anh-422-1549_banp.jpg",
+        imageUrl: "https://vtv1.mediacdn.vn/2020/9/18/dinh-1-1600394419770-16003999382051732609608.jpg",
         user: USERS[2].user,
         likes: 120,
         caption: "Helle, how are you?",

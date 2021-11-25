@@ -19,4 +19,8 @@ export const USERS = [
         user: "nani",
         image: "https://pickaface.net/gallery/avatar/.40053c16ee738e12.png"
     },
+    {
+        user: "atoni",
+        image: "https://pickaface.net/gallery/avatar/kev313522f61ed87c73.png"
+    },
 ]

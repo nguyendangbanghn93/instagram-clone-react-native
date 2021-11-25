@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView, Platform } from 'react-native';
+import BottomTabs, { bottomTabIcons } from '../components/home/BottomTabs';
 import Header from '../components/home/Header';
 import Post from '../components/home/Post';
 import Stories from '../components/home/Stories';
@@ -15,13 +16,15 @@ export default function HomeScreen() {
                     <Post post={post} key={index} />
                 ))}
             </ScrollView>
+            <BottomTabs icons={bottomTabIcons} />
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: "black",
         flex: 1,
-        backgroundColor: "black"
-    }
+        paddingTop: Platform.OS === 'android' ? 40 : 0
+    },
 });
