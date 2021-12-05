@@ -85,7 +85,7 @@ const PostFooter = () => (
 const Likes = ({ post }) => (
     <View style={{ flexDirection: "row", marginTop: 4 }}>
         <Text style={{ color: "white", fontWeight: "600" }}>
-            {post.likes.toLocaleString("en")} likes
+            {post?.likes_by_users?.length?.toLocaleString("en")} likes
         </Text>
     </View>
 )
@@ -107,7 +107,7 @@ const CommentSelection = ({ post }) => (
 )
 const Comments = ({ post }) => (
     <>
-        {post.comments.map((comment, index) => (
+        {post?.comments?.map((comment, index) => (
             <View key={index} style={{ flexDirection: "row", marginTop: 5 }}>
                 <Text style={{ color: "white" }}>
                     <Text style={{ fontWeight: "600" }}>{comment.user} </Text>
